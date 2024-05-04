@@ -77,5 +77,5 @@ function calculateScore() {
 submitButton.addEventListener("click", () => {
   const finalScore = calculateScore();
   scoreElement.textContent = `"Your score is ${finalScore} out of 5."`;
-  localStorage.setItem("score", finalScore);
+  sessionStorage.setItem("score", finalScore);
 });
